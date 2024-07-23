@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+}
+
+.sky{
+    height: 30%;
+    width: 100%;
+    background-color: blue;
+}
+
+.green{
+    height: 30%;
+    width: 100%;
+    background-color: rgb(0, 255, 17);
+}
+
+.road{
+    height: 40%;
+    width: 100%;
+    background-color: grey;
+    position: relative;
+}
+
+.stripes{
+    height: 10px;
+    width: 100%;
+    border-top: 5px dashed black;
+    position: absolute;
+    top: 50%;
+    
+}
+
+.road p {
+    font-size: 5rem;
+    position: absolute;
+  }
+  
+  .tractor {
+    top: -10%;
+    animation-name: drive;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  .car {
+    top: 40%;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  /* Animations */
+  
+  @keyframes drive {
+    from {
+      transform: translateX(-2vw) scale(-1, 1);
+    }
+    to {
+      transform: translateX(105vw) scale(-1, 1);
+    }
+  }
